@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mood Template</title>
+	<link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+	<style>
+		body {
+  			margin: 0;
+  			font-family:'Convergence';
+  			background-color: #02C39A;
+  			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1.0)), url('https://preview.redd.it/5lqpcm3o73r21.jpg?width=2324&format=pjpg&auto=webp&s=5afa0d2321b511690baf84cdee281164ee96a09d');
+		}
+		.topnav {
+  			background-color: #EDEDED;
+  			overflow: hidden;
+		}
+		.topnav a {
+ 			float: left;
+  			color: #5E4C5A;
+  			text-align: center;
+			padding: 14px 30px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.topnav a:hover {
+ 			background-color: #ddd;
+  			color: black;
+		}
+
+		.topnav a.active {
+  			background-color: #028090 ;
+  			color: white;
+
+		}
+		.topnav input[type=text] {
+			float: right;
+  			padding: 6px;
+  			border: none;
+  			margin-top: 8px;
+  			margin-right: 16px;
+  			font-size: 17px;
+		}
+
+		header{
+			height: 50%;
+			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			position: relative;	
+
+		}
+		h1{
+			text-align: center;
+			font-size: 80px;
+			font-family:'Convergence';
+			color: white;
+		}
+		h2{
+			font-size:50px;			
+			color:white;
+		}
+		.bod{
+			color: white;
+			font-size:20px;
+		}
+		.button {
+  			background-color: #05668D;
+  			border: none;
+  			color: white;
+  			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 20px;
+  			margin: 15px 15px;
+  			cursor: pointer;
+  			transition-duration: : 0.4s;
+  			width: 300px;
+  			border-radius: 20px;
+  			font-family:'Convergence';
+
+		}
+		.button:hover{
+			color: #05668D ;
+  			box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24);
+		}
+		.button1:hover {
+  			background-color: #ffff66;
+  		}
+		.button2:hover {
+			color: white;
+  			background-color: #80aaff;
+		}
+		.button3:hover {
+  			background-color: #99ff99;
+		}
+		.button4:hover {
+  			background-color: #ccb3ff;
+		}
+		.button5:hover {
+  			background-color: #ff99c2;
+		}
+		.button6:hover {
+  			background-color: #ffa366;
+		}
+		.button8:hover {
+  			background-color: black;
+  			color:white;
+  			border: 1px solid white;
+		}
+		.button7:hover {
+			color: white;
+  			background-color: #ff6699;
+		}
+		.tp:link, .tp:visited{
+			position: relative;
+			float: right;
+			color: white;
+			margin:10px 10px;
+		}
+		
+		
+		.end {
+            position: absolute;
+            bottom: -120px;
+            height: 90px;
+            width: 100%;
+            color: black;
+            background-color: #b3b3cc;
+            text-align: center;     
+
+        }
+		
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>MOVIES ON MOOD</h1>
+	</header>
+	<div class="topnav">
+  		<a href="homepage.php">Home</a>
+  		<a class="active" href="moodtemp.html">Mood Template</a>
+		<a href="admin1.php">Admin</a>
+		<a href="user0.php">User Account</a>
+		<a href="search.php">Search</a>
+		<a href="about.html">About us</a>
+	</div>
+
+	<div align="center" class="slidecontainer">
+		<h2>Mood TEMPLATE</h2>
+		<p class="bod">How are you feeling today?</p>
+  		
+		<a href="happy.php"><button class="button button1">Happy</button></a>
+		<a href="sad.php"><button class="button button2">Sad</button></a>
+		<a href="annoy.php"><button class="button button3">Annoyed</button></a>
+		<a href="relaxed.php"><button class="button button4">Relaxed</button></a>
+		<a href="rom.php"><button class="button button5">Romantic</button></a>
+		<a href="advent.php"><button class="button button6">Adventurous</button></a>
+		<a href="interest.php"><button class="button button7">Interested</button></a>
+		<a href="surprise.php"><button class="button button8">Surprise me</button></a>	
+  	</div>
+  	<div>	
+  		<a class="tp" href="homepage.html">Skip to Home Page>></a>
+  	</div>
+	
+
+</body>
+<footer>
+	<div class="end">
+		<p>Project developed by: Students of SAKEC</p>
+	</div>
+
+</footer>
+</html>

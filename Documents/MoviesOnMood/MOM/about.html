@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+	<style>
+		body {
+  			margin: 0;
+  			font-family:'Convergence';
+  			background-color: #02C39A;
+  			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1.0)), url('https://preview.redd.it/5lqpcm3o73r21.jpg?width=2324&format=pjpg&auto=webp&s=5afa0d2321b511690baf84cdee281164ee96a09d');
+		}
+		.topnav {
+  			background-color: #EDEDED;
+  			overflow: hidden;
+		}
+		.topnav a {
+ 			float: left;
+  			color: #5E4C5A;
+  			text-align: center;
+			padding: 14px 30px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.topnav a:hover {
+ 			background-color: #ddd;
+  			color: black;
+		}
+
+		.topnav a.active {
+  			background-color: #028090 ;
+  			color: white;
+
+		}
+		.topnav input[type=text] {
+			float: right;
+  			padding: 6px;
+  			border: none;
+  			margin-top: 8px;
+  			margin-right: 16px;
+  			font-size: 17px;
+		}
+
+		header{
+			height: 50%;
+			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			position: relative;	
+
+		}
+		h1{
+			text-align: center;
+			font-size: 80px;
+			font-family:'Convergence';
+			color: white;
+		}
+		.accordion {
+ 			background-color: #eee;
+  			color: #444;
+  			cursor: pointer;
+  			padding: 18px;
+  			width: 100%;
+  			border: none;
+  			text-align: left;
+  			outline: none;
+  			font-size: 15px;
+  			transition: 0.4s;
+		}
+		.active1, .accordion:hover {
+  			background-color: #ccc;
+		}		
+		.accordion:after {
+  			content: '\002B';
+  			color: #777;
+  			font-weight: bold;
+  			float: right;
+  			margin-left: 5px;
+		}
+		.panel {
+  			padding: 0 18px;
+  			background-color: white;
+  			max-height: 0;
+  			overflow: hidden;
+  			transition: max-height 0.2s ease-out;
+  			font-family: sans-serif;
+		}
+		.end{
+			position: relative;
+			bottom: 0px;
+			height: 90px;
+			width: 100%;
+			color: black;
+			background-color: #b3b3cc;
+			text-align: center;		
+		}
+		.bod{
+			margin-top: 30px;
+			margin-bottom: 125px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>MOVIES ON MOOD</h1>
+	</header>
+	<div class="topnav">
+  		<a href="homepage.php">Home</a>
+  		<a href="moodtemp.html">Mood Template</a>
+		<a href="admin1.php">Admin</a>
+		<a href="user0.php">User Account</a>
+		<a href="search.php">Search</a>
+		<a class="active" href="about.html">About us</a>
+	</div>
+	<div class="bod">
+	<button class="accordion">Details:</button>
+	<div class="panel">
+  		<p>The project is a Movie Referrence site with the movies being categorised by a new basis i.e. Moods.</p>
+	</div>
+
+	<button class="accordion">Developed by:</button>
+	<div class="panel">
+  		<p>Students of SAKEC SE4:<br>Vishal Dedavat<br>Rummaan Ahmad<br>Raj Bagrecha<br>Yahya Sakerwala</p>
+	</div>
+
+	<button class="accordion">Contact us:</button>
+	<div class="panel">
+  		<p>Email id:<br>vishal.dedavat_19@sakec.ac.in<br>rummaan.ahmad_19@sakec.ac.in<br>raj.bagrecha_19@sakec.ac.in<br>yahya.sakerwala_19@sakec.ac.in</p>
+	</div>
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    	this.classList.toggle("active1");
+    	var panel = this.nextElementSibling;
+    			if (panel.style.maxHeight) {
+    	  		panel.style.maxHeight = null;
+	    		} else {
+      			panel.style.maxHeight = panel.scrollHeight + "px";
+	    		} 
+  			});
+		}
+	</script>
+</body>
+<footer>
+	<div class="end" class="fi">
+		<p>Project developed by: Students of SAKEC</p>
+	</div>
+</footer>
+</html>
