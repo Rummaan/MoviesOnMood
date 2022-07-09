@@ -170,14 +170,7 @@
           //echo $percent;
           if($percent>65 || stristr($row->title, $str)!==false)
           {
-              # code...
               $c++;     
-    
-    /*$sth = $con->prepare("SELECT * FROM `general` WHERE title = '$str'"); 
-    $sth->setFetchMode(PDO:: FETCH_OBJ);
-    $sth->execute();*/
-    //if($row = $sth->fetch())
-    //{
       ?>
       <div class="container">
       <a href="g0.php?id=<?php echo $row->id;?>">
@@ -189,9 +182,6 @@
         </p>
       </div>
     </div>
-  
-
-    
   <?php     
       }
     }
