@@ -6,11 +6,11 @@ On viewing a particular Movie, it guides you to trailers, information, reviews, 
 
 The website contains a Search Bar for searching any movie. It uses a concept similar to **Fuzzy Search** to search any movie.
 
-
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/66682716/178119771-ab12e7e0-00f2-4683-88be-351ec07ee816.png">
 
 The repository conntains all the necessary code for the wesbite. XAMPP server would be needed to run the website. The entire code folder is to be placed in the **htdocs** folder :file_folder:
 
-*Apologies for the naming convention of the files. First Year did not do me good* :sweat_smile:
+*Apologies for the naming convention of the files and not much significant work int he project. First Year did not do me good* :sweat_smile:
 
 ## Language, Framework and Tools
 <p align="center">
